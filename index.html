@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<title>d͓̽i͎s͎a͎p͎p͎e͎a͎r͎</title>
+	<!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	 crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+	 crossorigin=""></script>
+	<scrip src="turkey.js">
+	</script> -->
+
+	<link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+	<link rel="stylesheet" href="node_modules/toastr/build/toastr.css" />
+	<link rel="stylesheet" href="style.css" />
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+
+	<script src="node_modules/toastr/build/toastr.min.js"></script>
+
+	<script src="node_modules/leaflet/dist/leaflet-src.js"></script>
+	<script src="node_modules/leaflet-geometryutil/src/leaflet.geometryutil.js"></script>
+	<script src="node_modules/underscore/underscore-min.js"></script>
+
+
+</head>
+
+<body>
+
+	<div id="map"></div>
+
+	<div class="credit">meetlab.hu</div>
+
+	<div class="overlay">
+		<div class="buttons">
+			<div class="no-state">
+				<button class="language" onclick="onStart('en')">
+					en
+				</button>
+				<button class="language" onclick="onStart('tr')">
+					tr
+				</button>
+			</div>
+
+			<div class="has-state">
+				<button class="continue" onclick="onContinue()">
+					continue
+				</button>	
+				<button class="restart" onclick="restart()">
+					restart
+				</button>	
+			</div>
+			<div class="game-over">
+				<p>the end</p>
+				<button class="restart-over" onclick="restart()">
+					restart
+				</button>	
+			</div>
+		</div>
+	</div>
+
+	<script src="story-turkey.js"></script>
+	<script src="dspr.js"></script>
+
+</body>
+
+
+</html>

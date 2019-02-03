@@ -1,0 +1,18 @@
+{
+  "name": "turkey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "turkey.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "leaflet": "^1.4.0",
+    "leaflet-geometryutil": "^0.9.1",
+    "toastr": "^2.1.4",
+    "underscore": "^1.9.1"
+  }
+}
